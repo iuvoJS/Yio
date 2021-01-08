@@ -3,9 +3,9 @@ class preloadClass {
     this.stop = function (delay, func) {
       $("body").css("--navbar-width", yio.ScrollbarWidth + "px");
       setTimeout(() => {
-        if (document.querySelector(".preload") != null) {
+        if (document.getElementById("preload") != null) {
           // Remove Preloader after the site loaded lmao
-          document.querySelector(".preload").classList.add("preload-finish");
+          document.getElementById("preload").classList.add("preload-finish");
           // Make overflow Visible because the preloader has hidden
           document.querySelector("body").style.overflow = "visible";
         }

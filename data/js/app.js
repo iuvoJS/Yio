@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  preload.stop(250);
-  if ("ontouchstart" in window == true) {
-    $(".carousel-control").addClass("touch");
-    $("body").addClass("touch");
-  }
+  yio.preload.stop(250, () => {
+    if (window.touch == true) {
+      $("body").addClass("touch");
+    }
+  });
 });
 
 $(".menu-toggle").click(function (e) {
