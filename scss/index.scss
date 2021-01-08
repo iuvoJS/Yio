@@ -389,11 +389,11 @@ aside {
    }
 
    .flag-de {
-      background: url("http://localhost/.apps/yio/image/flags/de.png");
+      background: url("../image/flags/de.png");
    }
 
    .flag-en {
-      background: url("http://localhost/.apps/yio/image/flags/en.png");
+      background: url("../image/flags/en.png");
    }
 }
 
@@ -717,6 +717,7 @@ header {
       a {
          color: #caced1;
          text-decoration: none;
+         transition: 0.3s ease;
 
          &:hover {
             color: var(--secondary-color);

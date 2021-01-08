@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang=" echo $htmllang ">
+<html lang="en">
 
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Home</title>
    <link rel="stylesheet" href="./lib/aos-master/aos.css">
-   <link rel="stylesheet" href="./lib/bootstrap/bootstrap-5.0.0-beta1/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./lib/bootstrap/bootstrap-5.0.0-beta1/dist/css/bootstrap.css">
    <link rel=" stylesheet" href="./css/index.min.css">
 
    <meta name="msapplication-TileColor" content="#ffffff">
@@ -53,8 +53,6 @@
                <li><a href="http://localhost/.apps/yio/docs/">Documentation</a></li>
                <li><a href="http://localhost/.apps/yio/more/#faq">FAQ</a></li>
                <li><a href="http://localhost/contact/">Contact us</a></li>
-
-               <li class="pt-5"><a href="http://localhost/hub/">Hub</a></li>
 
             </ul>
             <ul class="language">
@@ -111,18 +109,18 @@
       <div class="container">
          <div class="row">
             <div class="description col-xl-7  col-12">
-               <h2 class="title" data-aos="fade-up" data-aos-delay="350">Yeeet It Out!</h2>
+               <h2 class="title" data-aos="fade-up">Yeeet It Out!</h2>
                <div class="button-group" data-aos="fade-up" data-aos-delay="650">
                   <a href="./download/" class="btn btn-secondary get">Get now</a>
                   <a href="./more/" class="btn btn-white learn">Learn more &#10230;</a>
                </div>
             </div>
             <div class="col-xl-5 col-12 image-show">
-               <div class="image-wrapper" data-aos="fade-up-left" data-aos-delay="350">
+               <div class="image-wrapper" data-aos="fade-up-left" data-aos-delay="100">
                   <img src="./image/header/header-image.png" alt="..." class="grey">
                   <img src="./image/header/header-image.png" alt="...">
                </div>
-               <div class="mobile-image-wrapper" data-aos="fade-up" data-aos-delay="350">
+               <div class="mobile-image-wrapper" data-aos="fade-up">
                   <i class="fas fa-archway"></i>
                </div>
             </div>
@@ -136,30 +134,42 @@
       </div>
    </header>
    <section class="about" id="about">
-      <div class="container" data-aos="fade-up">
-         <h3> echo $about->title </h3>
-         <p class="mb-5"> echo $about->subtitle </p>
+      <div class="container">
+         <div data-aos="fade-up">
+            <h3>About</h3>
+            <p class="mb-5">Lorem ipsum</p>
+         </div>
          <div class="row">
-            <div class="col-sm">
+            <div class="col-sm" data-aos="fade-up" data-aos-delay="100">
                <div class="about-icon align-middle">
                   <i class="fas fa-layer-group"></i>
                </div>
-               <h4> echo $about->one->title </h4>
-               <p> echo $about->one->text </p>
+               <h4>Lorem ipsum</h4>
+               <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua.
+               </p>
             </div>
-            <div class="col-sm">
+            <div class="col-sm" data-aos="fade-up" data-aos-delay="100">
                <div class="about-icon align-middle">
                   <i class="fas fa-brain"></i>
                </div>
-               <h4> echo $about->two->title </h4>
-               <p> echo $about->two->text </p>
+               <h4>Lorem ipsum</h4>
+               <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore
+                  magna aliquyam erat, sed diam voluptua.
+               </p>
             </div>
-            <div class="col-sm">
+            <div class="col-sm" data-aos="fade-up" data-aos-delay="100">
                <div class="about-icon align-middle">
                   <i class="fas fa-images"></i>
                </div>
-               <h4> echo $about->three->title </h4>
-               <p> echo $about->three->text </p>
+               <h4>Lorem ipsum</h4>
+               <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua.
+               </p>
             </div>
          </div>
       </div>
@@ -169,19 +179,19 @@
          <div id="reviews" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <h2>“ echo $review->item->one->text ”</h2>
+                  <h2>“ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam ”</h2>
                   <img src="./image/comments/placeholder/dog.jpg" alt="...">
-                  <p> echo $review->item->one->author </p>
+                  <p>Max Mustermann</p>
                </div>
                <div class="carousel-item">
-                  <h2>“ echo $review->item->two->text ”</h2>
+                  <h2>“ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam ”</h2>
                   <img src="./image/comments/placeholder/snow.jpg" alt="...">
-                  <p> echo $review->item->two->author </p>
+                  <p>Max Mustermann</p>
                </div>
                <div class="carousel-item">
-                  <h2>“ echo $review->item->three->text ”</h2>
+                  <h2>“ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam ”</h2>
                   <img src="./image/comments/placeholder/snow_bike.jpg" alt="...">
-                  <p> echo $review->item->three->author </p>
+                  <p>Max Mustermann</p>
                </div>
             </div>
             <a class="carousel-control-prev carousel-control" href="#reviews" role="button" data-bs-slide="prev">
@@ -195,7 +205,7 @@
    </section>
    <section class="demo">
       <h2 data-aos="fade-up">Still not convinced? Try the <a href="./demo/">Demo</a></h2>
-      <div data-aos="fade-up" data-aos-delay="450">
+      <div data-aos="fade-up" data-aos-delay="250">
          <a href="./demo/" class="btn btn-secondary">Try demo</a>
       </div>
    </section>
@@ -209,30 +219,23 @@
                   </div>
                   <div class="col-sm-3 my-sm-0 mt-5">
                      <ul class="list-unstyled">
-                        <li class="mt-0"><a href="#"> echo $footer->section->one->item->one </a></li>
-                        <li><a href="#"><a href="#"> echo $footer->section->one->item->two </a></a></li>
-                        <li><a href="#"> echo $footer->section->one->item->three </a></li>
+                        <li class="mt-0"><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
                      </ul>
                   </div>
                   <div class="col-sm-3 my-sm-0 mt-5">
                      <ul class="list-unstyled">
-                        <li class="mt-0"><a href="http://localhost/privacypolicy"> echo $footer->section->two->item->one
-                           </a>
-                        </li>
-                        <li><a href="http://localhost/imprint"> echo $footer->section->two->item->two </a>
-                        </li>
-                        <li><a href="#"> echo $footer->section->two->item->three </a></li>
+                        <li class="mt-0"><a href="#"><a href="#">Lorem ipsum</a></a></li>
+                        <li><a href="http://localhost/imprint">Imprint</a></li>
+                        <li><a href="http://localhost/privacypolicy">Privacy Policy</a></li>
                      </ul>
                   </div>
                   <div class="col-sm-3 my-sm-0 mt-5">
                      <ul class="list-unstyled">
-                        <li class="mt-0"><a href="http://localhost/privacypolicy"> echo $footer->section->two->item->one
-                           </a>
-                        </li>
-                        <li><a href="http://localhost/imprint"> echo $footer->section->two->item->two </a>
-                        </li>
-                        <li><a href="#"> echo $footer->section->two->item->three </a>
-                        </li>
+                        <li class="mt-0"><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
                      </ul>
                   </div>
                </div>
@@ -241,26 +244,7 @@
          <div class="row justify-content-center mt-0 pt-0 row-1 mb-0 px-sm-3 px-2">
             <div class="col-12">
                <div class="row my-4 row-1 no-gutters">
-                  <div class="col-sm-3 col-auto text-center"><small>&#169; M2Z</small></div>
-                  <div class="col-md-3 col-auto"></div>
-                  <div class="col-md-3 col-auto"></div>
-                  <div class="col my-auto text-right social">
-                     <a href="#">
-                        <i class="fab fa-github"></i>
-                     </a>
-                     <a href="#">
-                        <i class="fab fa-patreon"></i>
-                     </a>
-                     <a href="#">
-                        <i class="fab fa-youtube"></i>
-                     </a>
-                     <a href="#">
-                        <i class="fab fa-twitter"></i>
-                     </a>
-                     <a href="#">
-                        <i class="fab fa-instagram"></i>
-                     </a>
-                  </div>
+                  <div class="mx-auto text-center"><small>&#169; M2Z</small></div>
                </div>
             </div>
          </div>
