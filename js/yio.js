@@ -106,6 +106,32 @@ class Yio {
     request.send();
     return window.agent;
   }
+
+  checkLang() {
+    if (yio.cookie("lang") != null) {
+      switch (yio.cookie("lang")) {
+        case "en":
+          break;
+        case "de":
+          // window.location.replace("./de/");
+          break;
+        default:
+          yio.createLang();
+          break;
+      }
+    } else {
+      yio.createLang();
+    }
+  }
+
+  createLang() {
+    const language = navigator.language;
+    if (navigator.language.includes("en")) {
+      yio.cookie("lang", "en", 1, "l");
+    } else if (language.includes("de")) {
+      yio.cookie("lang", "de", 1, "l");
+    }
+  }
 }
 
 let yio = new Yio();
@@ -130,3 +156,5 @@ function ScrollbarWidth() {
 
   return scrollbarWidth;
 }
+
+yio.checkLang();
