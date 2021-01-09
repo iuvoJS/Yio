@@ -83,6 +83,8 @@ class Yio {
       }
       // Reload the Site
       location.reload();
+    } else {
+      console.info("False parameters");
     }
   }
 
@@ -97,7 +99,8 @@ class Yio {
 
     request.onload = function () {
       var data = JSON.parse(this.response);
-      window.agent = data["Answer"].replace(/Your user agent: /g, "");
+      data = data.Answer;
+      window.agent = data.replace(/Your user agent: /g, "");
       return window.agent;
     };
     request.send();

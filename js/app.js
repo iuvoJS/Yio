@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  yio.preload.stop(250, () => {
+  yio.preload.stop(450, function () {
     AOS.init({
       delay: 50, // values from 0 to 3000, with step 50ms
       duration: 1000, // values from 0 to 3000, with step 50ms
