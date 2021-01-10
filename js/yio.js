@@ -82,7 +82,7 @@ class Yio {
         document.cookie = n + "=" + c + "; expires=" + CookieEx + ";";
       }
       // Reload the Site
-      location.reload();
+      //location.reload();
     } else {
       console.info("False parameters");
     }
